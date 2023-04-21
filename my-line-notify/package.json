@@ -1,0 +1,33 @@
+{
+  "name": "my-line-notify",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "dist/my-login.es.js",
+  "exports": {
+    ".": "./dist/my-login.es.js"
+  },
+  "types": "types/my-login.d.ts",
+  "files": [
+    "dist",
+    "types"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "preview": "vite preview",
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "@vaadin/router": "^1.7.5",
+    "lit": "^2.6.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.21.4",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "typescript": "^4.9.3",
+    "vite": "^4.2.0"
+  }
+}

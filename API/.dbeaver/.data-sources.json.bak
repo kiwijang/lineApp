@@ -1,0 +1,29 @@
+{
+	"folders": {},
+	"connections": {
+		"sqlite_jdbc-18795733cb8-63a3d0150bbe717d": {
+			"provider": "sqlite",
+			"driver": "sqlite_jdbc",
+			"name": "LineApp.db",
+			"save-password": true,
+			"configuration": {
+				"database": "C:\\Users\\kiwi\\Desktop\\LineApp\\API\\LineApp.db",
+				"url": "jdbc:sqlite:C:\\Users\\kiwi\\Desktop\\LineApp\\API\\LineApp.db",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "开发",
+			"color": "255,255,255",
+			"description": "常规开发数据库",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}

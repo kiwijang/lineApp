@@ -1,0 +1,29 @@
+{
+	"folders": {},
+	"connections": {
+		"sqlite_jdbc-187a36fd474-ce603e23bec6d0b": {
+			"provider": "sqlite",
+			"driver": "sqlite_jdbc",
+			"name": "lineapp.db",
+			"save-password": true,
+			"configuration": {
+				"database": "C:\\Users\\kiwi\\Desktop\\datingApp\\API\\lineapp.db",
+				"url": "jdbc:sqlite:C:\\Users\\kiwi\\Desktop\\datingApp\\API\\lineapp.db",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "开发",
+			"color": "255,255,255",
+			"description": "常规开发数据库",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}
