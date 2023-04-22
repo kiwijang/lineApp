@@ -113,5 +113,7 @@ document.addEventListener('isLogin', (e: any) => {
 
 ## OAuth 簡介
 
+### Access Token 與 Id Token
+
 ## 待補
 [Auth] 檢查 cookie
