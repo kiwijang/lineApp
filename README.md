@@ -14,13 +14,13 @@ dotnet run
 
 ## 關於
 
-### 一定要登入才可訂閱(因為要記錄你的 Notify 訊息內容和時間)
+#### 一定要登入才可訂閱(因為要記錄你的 Notify 訊息內容和時間)
 
 串接 Line Notify 登入，不必儲存使用者個資(但這系統會存 sub 和 line 顯示名字)。
 串接 Line Notify 服務，可接收該頻道的放送內容。
 
 
-### 使用 sqlite
+#### 使用 sqlite
 
 ![image](https://user-images.githubusercontent.com/21300139/233802141-34a01111-3629-417e-a90c-6e04af4d8d62.png)
 > DB schema
