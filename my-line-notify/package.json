@@ -2,16 +2,6 @@
   "name": "my-line-notify",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
-  "main": "dist/my-login.es.js",
-  "exports": {
-    ".": "./dist/my-login.es.js"
-  },
-  "types": "types/my-login.d.ts",
-  "files": [
-    "dist",
-    "types"
-  ],
   "scripts": {
     "dev": "vite",
     "preview": "vite preview",
@@ -19,6 +9,7 @@
   },
   "dependencies": {
     "@vaadin/router": "^1.7.5",
+    "core-js": "^3.30.1",
     "lit": "^2.6.1"
   },
   "devDependencies": {

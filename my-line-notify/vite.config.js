@@ -14,7 +14,7 @@ export default defineConfig({
       input: ['index.html'],
       output: {
         entryFileNames: 'entry-[name].js',
-        format: 'iife',
+        // format: 'iife',
         // sourcemap: true,
       },
       plugins: [
@@ -27,11 +27,11 @@ export default defineConfig({
     },
   },
   server: {
-    port: 3030,
-    host: 'localhost',
+    port: 8080,
+    // host: 'localhost',
   },
   preview: {
-    port: 3030,
-    host: 'localhost',
+    port: 8080,
+    // host: 'localhost',
   },
 });
