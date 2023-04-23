@@ -219,9 +219,10 @@ Access Token 是 OIDC 用於授權訪問 API 的憑證。當用戶通過 OAuth 2
 
 Id Token 則是 OIDC 用於身份驗證的憑證。它是一個 JSON Web Token（JWT），包含有用戶身份信息和其他附加信息。當用戶通過 OAuth 2.0 授權驗證後，他們的瀏覽器將被重定向回 OIDC 服務器以獲取一個 Id Token。這個 Token 包含了用戶的身份信息，例如用戶的 ID、名字、電子郵件地址等等。應用程序可以使用 Id Token 驗證用戶身份並執行必要的操作。
 
+
 ## 待補
 
-#### 檢查 cookie 是否存在應該要抽出去寫 attribute 會比較乾淨。
+### 檢查 cookie 是否存在應該要抽出去寫 attribute 會比較乾淨。
 
 用 ASP.NET Core 的 Web API 中的自訂授權屬性，以驗證 Cookie 是否存在：
 ``` csharp
@@ -254,7 +255,7 @@ public class MyController : ControllerBase
 
 ```
 
-#### state 要防 CSRF(XSRF)，實作 session
+### state 要防 CSRF(XSRF)，實作 session
 
 CSRF (Cross-Site Request Forgery)，又稱為 XSRF，是一種網站應用程式漏洞攻擊。
 攻擊者通過欺騙使用者在瀏覽器中執行非預期的操作，從而將惡意請求發送到被攻擊者已經登錄的網站。
@@ -299,7 +300,7 @@ public async Task<IActionResult> Callback(string code, string state)
 當用戶返回後，Callback 方法從 querystring 中獲取 state 參數，並從 session 中獲取之前保存的 state 字符串進行比對。
 如果兩者不一致，則返回 BadRequest 結果；否則進行後續處理。
 
-#### static web 的路由問題(會把網址當成 http get)
+### static web 的路由問題(會把網址當成 http get)
 
 除了可用 HashLocationStrategy
 也可這樣轉成 query string 和 hash fragment:
