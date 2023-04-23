@@ -71,6 +71,9 @@ db.Database.Migrate();
 系統的後端是以 ASP.NET Core 為基礎所建構，使用 EF Core Code First 進行 DB schema 的建立。
 為了確保使用者資料的安全性，系統使用 JWT 和 RSA 進行身份驗證和加密，同時使用 Cookie 儲存 Notify access_token。
 
+![image](https://user-images.githubusercontent.com/21300139/233859140-530b36f6-2f97-49e4-8c9d-899be3c5ed96.png)
+> API swagger http://localhost:5000/swagger/index.html
+
 ### Cookies
 
 Cookie 在前後端都有設定:
