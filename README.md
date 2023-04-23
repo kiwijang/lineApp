@@ -299,3 +299,8 @@ public async Task<IActionResult> Callback(string code, string state)
 當用戶返回後，Callback 方法從 querystring 中獲取 state 參數，並從 session 中獲取之前保存的 state 字符串進行比對。
 如果兩者不一致，則返回 BadRequest 結果；否則進行後續處理。
 
+#### static web 的路由問題(會把網址當成 http get)
+
+除了可用 HashLocationStrategy
+也可這樣轉成 query string 和 hash fragment:
+[Routing on github pages doesn't work. How do I fix it?](https://stackoverflow.com/questions/62483227/routing-on-github-pages-doesnt-work-how-do-i-fix-it?fbclid=IwAR1HiW9P8divG0ke6eQ3Mg-aVOcJW1ZOK3A5oMAHoUKIzZbZOzkf1MCsbyQ)
