@@ -48,6 +48,15 @@ dotnet run
 - NotifyHist：儲存發文資料與時間點，用於系統追蹤和紀錄。
 
 啟動應用時就 migrate sqlite DB 一次。
+
+``` csharp
+// 自動遷移資料庫
+using var scope = app.Services.CreateScope();
+var serviceProvider = scope.ServiceProvider;
+var db = serviceProvider.GetService<DataContext>();
+db.Database.Migrate();
+```
+
 最酷的是關聯設計，可參考以下兩篇文章。
 - [EF Core 筆記 3 - Model 關聯設計 by 暗黑執行續](https://blog.darkthread.net/blog/ef-core-notes-3/)
 - [CodeFirst與資料庫版控 by ATai](https://blog.darkthread.net/blog/ef-core-notes-3/)
