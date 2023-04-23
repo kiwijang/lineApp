@@ -32,7 +32,6 @@ dotnet run
 - 使用 AES 加密過的 Line Notify access_token 儲存 Notify 訂閱資訊，以避免重複訂閱。
 - 使用 Cookie 紀錄 Notify access_token 以及使用者登入狀態，保障使用者的資訊安全。
 - 使用 EF Core Code First 設計 DB schema，建立關聯式資料庫。
-- 透過 JWT 和 RSA 實現對稱加密和非對稱加密。
 - 透過 OAuth 實現簡單的身份驗證。
 
 ## 技術細節
