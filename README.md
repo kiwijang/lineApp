@@ -148,6 +148,8 @@ https://babel.docschina.org/docs/en/config-files/
 > 假設您已經按照上面討論的方式正確載入了 babel.config.json 檔案，Babel 只會處理根套件內的 .babelrc.json 檔案（而不是子套件）。
 > 要啟用該 .babelrc.json 的處理，您需要從 babel.config.json 檔案內使用 "babelrcRoots" 選項。
 
+- [.babelrc与babel.config.js配置文件的区别](https://github.com/willson-wang/Blog/issues/100)
+
 ## 對稱加密和非對稱加密
 
 ### JWT、RSA
@@ -222,6 +224,7 @@ OAuth 2.0 Device Authorization Grant 的規格在 [RFC8628](https://www.rfc-edit
 
 - [[OpenID] 使用 RS256 與 JWKS 驗證 JWT token 有效性](https://fullstackladder.dev/blog/2023/01/28/openid-validate-token-with-rs256-and-jwks/)
 - [LINE Login 簽發的 ID Token 如何用 ES256 非對稱加密演算法的公開金鑰驗證](https://blog.miniasp.com/post/2023/04/09/How-to-validate-LINE-Login-issued-ES256-ID-Token)
+- [要在不同Server間驗證JWT好麻煩嗎？RS256提供你一種簡單的選擇 - JWT篇](https://ithelp.ithome.com.tw/articles/10231212)
 
 ### Access Token 與 Id Token
 
