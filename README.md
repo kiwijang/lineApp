@@ -190,13 +190,13 @@ OAuth通常被用於實現第三方登錄，以及在多個應用程序之間共
 OAuth 的 RFC 規格書為 [RFC6749](https://www.rfc-editor.org/rfc/rfc6749#appendix-A.10)。
 OAuth2.0 定義了五種不同的授權流程，以適應不同的應用場景和用戶需求。這些授權流程包括：
 
-1. 授權碼流程（Authorization Code Grant）：最廣泛使用的授權流程，適用於第三方應用程序需要訪問用戶數據的情況。該流程分為獲取授權碼和使用授權碼獲取訪問令牌兩個步驟。
+1. 授權碼流程（Authorization Code Grant）：最廣泛使用的授權流程，適用於第三方應用程序需要訪問用戶數據的情況。該流程分為獲取授權碼和使用授權碼獲取訪問令牌兩個步驟，token 的傳輸都是在後端，安全性較高。
 
 1. 隱式授權流程（Implicit Grant）：適用於簡單的用戶場景，例如前端 JavaScript 應用程序需要訪問某些用戶數據的情況。該流程僅通過重定向 URI 返回訪問令牌，不經過授權碼這個中介步驟。
 
 1. 密碼授權流程（Resource Owner Password Credentials Grant）：適用於應用程序只信任用戶，不信任第三方的情況。用戶需要直接將自己的資格證明發送到應用程序中，該流程的安全性較低，並不推薦在生產環境中使用。
 
-1. 客戶端憑證授權流程（Client Credentials Grant）：適用於第三方應用程序需要訪問受保護的 API 資源，但不需要訪問特定用戶數據的情況。該流程只需要使用應用程序的客戶端 ID 和密鑰就能獲取訪問令牌，安全性較高。
+1. 客戶端憑證授權流程（Client Credentials Grant）：適用於第三方應用程序需要訪問受保護的 API 資源，但不需要訪問特定用戶數據的情況。該流程只需要使用應用程序的客戶端 ID 和密鑰就能獲取訪問令牌。
 
 1. 裝置授權授權碼(Device Authorization Grant) 也稱為 Device Flow：用於無法直接輸入密碼的裝置，例如智能電視或游戲機等。在此授權流程中，用戶首先在裝置上輸入驗證 URL，然後使用此 URL 登錄其帳戶並授予裝置權限。此後，裝置可以使用 Access Token 和 Refresh Token 訪問 API 來代表用戶執行操作。
 OAuth 2.0 Device Authorization Grant 的規格在 [RFC8628](https://www.rfc-editor.org/rfc/rfc8628)。
